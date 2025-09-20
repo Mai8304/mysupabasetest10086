@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactElement } from "react";
 
 import { Loader2, LogOut } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -14,7 +14,7 @@ import {
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { Button } from "@/components/ui/button";
 
-export function TopNavigation(): JSX.Element {
+export function TopNavigation(): ReactElement {
   const router = useRouter();
   const t = useTranslations("dashboard.auth");
   const { session, isLoading: authLoading } = useSessionContext();
