@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactElement, type ReactNode } from "react";
 
 import { SessionContextProvider } from "@supabase/auth-helpers-react";
 import type { Session, SupabaseClient } from "@supabase/supabase-js";
@@ -9,14 +9,14 @@ import { useRouter } from "next/navigation";
 import { createSupabaseBrowserClient } from "@/lib/supabase/client";
 
 type SupabaseProviderProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   initialSession: Session | null;
 };
 
 export function SupabaseProvider({
   children,
   initialSession,
-}: SupabaseProviderProps): JSX.Element {
+}: SupabaseProviderProps): ReactElement {
   const router = useRouter();
   const [supabaseClient] = useState<SupabaseClient>(() =>
     createSupabaseBrowserClient(),
