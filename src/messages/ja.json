@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "環境診断ダッシュボード",
+      "description": "Node.js、Python、Next.js、shadcn/ui、Tailwind CSS、FastAPI、pnpm のインストール状況とバージョンを確認します。"
+    },
+    "status": {
+      "checking": "確認中…",
+      "summary": "{total} 件中 {count} 件を検出"
+    },
+    "actions": {
+      "refreshing": "チェックを実行中",
+      "refresh": "再チェック"
+    },
+    "notices": {
+      "fetchError": "診断結果を取得できませんでした。再度お試しください。",
+      "loadingHint": "コマンドを実行しています。しばらくお待ちください。",
+      "errorTitle": "診断に失敗しました"
+    },
+    "table": {
+      "title": "ツールの診断結果",
+      "description": "インストール状況、バージョン、コマンド出力を表示します。",
+      "columns": {
+        "tool": "ツール",
+        "status": "ステータス",
+        "version": "バージョン",
+        "output": "出力"
+      },
+      "loading": "コマンドを実行しています...",
+      "empty": "診断結果がありません。"
+    },
+    "footer": {
+      "tip": "サービスはポート 3000 で動作します。<command>npm run dev</command> で起動してください。"
+    },
+    "badge": {
+      "installed": "インストール済み",
+      "missing": "未検出"
+    },
+    "system": {
+      "title": "サーバーのシステム情報",
+      "description": "ホスト OS や CPU、メモリなどの実行環境を表示します。",
+      "fields": {
+        "hostname": "ホスト名",
+        "platform": "プラットフォーム",
+        "release": "OSリリース",
+        "arch": "アーキテクチャ",
+        "cpuModel": "CPUモデル",
+        "cpuCores": "CPUコア数",
+        "cpuSpeed": "CPUクロック",
+        "totalMemory": "総メモリ (GB)",
+        "freeMemory": "空きメモリ (GB)",
+        "uptime": "稼働時間",
+        "loadAverage": "負荷平均 (1 / 5 / 15 分)"
+      },
+      "units": {
+        "day": "日",
+        "hour": "時間",
+        "minute": "分"
+      },
+      "values": {
+        "notAvailable": "データなし"
+      }
+    },
+    "language": {
+      "ariaLabel": "表示言語を変更",
+      "current": "選択中"
+    },
+    "auth": {
+      "title": "ログインが必要です",
+      "headline": "続行するにはログインしてください",
+      "description": "メールまたは Google アカウントでサインインして診断ダッシュボードにアクセスします。",
+      "requirement": {
+        "title": "ログインが必要です",
+        "description": "環境診断を実行する前にログインしてください。"
+      },
+      "loading": "セッションを確認しています…",
+      "signOut": "ログアウト",
+      "signedInAs": "{email} としてログイン中",
+      "userFallback": "あなたのアカウント"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}

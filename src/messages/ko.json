@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "환경 진단 대시보드",
+      "description": "Node.js, Python, Next.js, shadcn/ui, Tailwind CSS, FastAPI, pnpm 설치 상태와 버전을 확인합니다."
+    },
+    "status": {
+      "checking": "검사 중…",
+      "summary": "{total}개 중 {count}개 확인됨"
+    },
+    "actions": {
+      "refreshing": "검사를 실행하는 중",
+      "refresh": "다시 검사"
+    },
+    "notices": {
+      "fetchError": "진단 정보를 불러오지 못했습니다. 다시 시도하세요.",
+      "loadingHint": "명령을 실행 중입니다. 잠시만 기다려 주세요.",
+      "errorTitle": "진단 실패"
+    },
+    "table": {
+      "title": "도구별 진단 결과",
+      "description": "설치 상태, 버전, 명령 출력 결과를 보여줍니다.",
+      "columns": {
+        "tool": "도구",
+        "status": "상태",
+        "version": "버전",
+        "output": "출력"
+      },
+      "loading": "명령을 실행하는 중...",
+      "empty": "진단 결과가 없습니다."
+    },
+    "footer": {
+      "tip": "서비스는 3000번 포트에서 실행됩니다. <command>npm run dev</command> 명령으로 시작하세요."
+    },
+    "badge": {
+      "installed": "설치됨",
+      "missing": "확인되지 않음"
+    },
+    "system": {
+      "title": "서버 시스템 정보",
+      "description": "호스트 운영체제, CPU, 메모리 등 환경 정보를 보여줍니다.",
+      "fields": {
+        "hostname": "호스트 이름",
+        "platform": "플랫폼",
+        "release": "OS 릴리스",
+        "arch": "아키텍처",
+        "cpuModel": "CPU 모델",
+        "cpuCores": "CPU 코어 수",
+        "cpuSpeed": "CPU 클록 속도",
+        "totalMemory": "총 메모리 (GB)",
+        "freeMemory": "사용 가능한 메모리 (GB)",
+        "uptime": "가동 시간",
+        "loadAverage": "부하 평균 (1 / 5 / 15분)"
+      },
+      "units": {
+        "day": "일",
+        "hour": "시간",
+        "minute": "분"
+      },
+      "values": {
+        "notAvailable": "정보 없음"
+      }
+    },
+    "language": {
+      "ariaLabel": "표시 언어 변경",
+      "current": "사용 중"
+    },
+    "auth": {
+      "title": "로그인이 필요합니다",
+      "headline": "계속하려면 로그인하세요",
+      "description": "이메일 또는 Google 계정으로 로그인하여 진단 대시보드에 접근하세요.",
+      "requirement": {
+        "title": "로그인 필요",
+        "description": "환경 진단을 실행하기 전에 먼저 로그인해야 합니다."
+      },
+      "loading": "세션을 확인하는 중…",
+      "signOut": "로그아웃",
+      "signedInAs": "{email}로 로그인됨",
+      "userFallback": "내 계정"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}

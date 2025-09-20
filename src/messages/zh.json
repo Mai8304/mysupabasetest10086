@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "环境检测面板",
+      "description": "检测 Node.js、Python、Next.js、shadcn/ui、Tailwind CSS、FastAPI、pnpm 的安装状态及版本。"
+    },
+    "status": {
+      "checking": "检测进行中",
+      "summary": "已检测 {count}/{total}"
+    },
+    "actions": {
+      "refreshing": "正在检测",
+      "refresh": "重新检测"
+    },
+    "notices": {
+      "fetchError": "获取检测结果失败，请稍后重试。",
+      "loadingHint": "正在执行命令，请稍候……",
+      "errorTitle": "检测失败"
+    },
+    "table": {
+      "title": "各工具检测结果",
+      "description": "展示安装状态、版本号与命令输出。",
+      "columns": {
+        "tool": "工具",
+        "status": "状态",
+        "version": "版本",
+        "output": "输出内容"
+      },
+      "loading": "正在执行命令...",
+      "empty": "暂无检测结果。"
+    },
+    "footer": {
+      "tip": "服务运行在 3000 端口，执行 <command>npm run dev</command> 即可访问。"
+    },
+    "badge": {
+      "installed": "已安装",
+      "missing": "未检测到"
+    },
+    "system": {
+      "title": "服务器系统信息",
+      "description": "展示当前服务器的操作系统、CPU、内存等运行环境。",
+      "fields": {
+        "hostname": "主机名",
+        "platform": "平台",
+        "release": "系统版本",
+        "arch": "架构",
+        "cpuModel": "CPU 型号",
+        "cpuCores": "CPU 核心数",
+        "cpuSpeed": "CPU 主频",
+        "totalMemory": "总内存 (GB)",
+        "freeMemory": "可用内存 (GB)",
+        "uptime": "已运行时间",
+        "loadAverage": "平均负载 (1 / 5 / 15 分钟)"
+      },
+      "units": {
+        "day": "天",
+        "hour": "小时",
+        "minute": "分钟"
+      },
+      "values": {
+        "notAvailable": "暂无数据"
+      }
+    },
+    "language": {
+      "ariaLabel": "切换显示语言",
+      "current": "当前"
+    },
+    "auth": {
+      "title": "需要账户",
+      "headline": "登录后继续",
+      "description": "使用邮箱或 Google 账号登录以访问诊断面板。",
+      "requirement": {
+        "title": "请先登录",
+        "description": "运行环境检测前需要先完成登录。"
+      },
+      "loading": "正在检查登录状态…",
+      "signOut": "退出登录",
+      "signedInAs": "当前账号 {email}",
+      "userFallback": "你的账号"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}

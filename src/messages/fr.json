@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "Tableau de diagnostic de l’environnement",
+      "description": "Vérifie l’installation et la version de Node.js, Python, Next.js, shadcn/ui, Tailwind CSS, FastAPI et pnpm."
+    },
+    "status": {
+      "checking": "Vérification en cours…",
+      "summary": "{count} sur {total} détectés"
+    },
+    "actions": {
+      "refreshing": "Exécution des vérifications",
+      "refresh": "Relancer les vérifications"
+    },
+    "notices": {
+      "fetchError": "Impossible de récupérer le diagnostic. Veuillez réessayer.",
+      "loadingHint": "Les commandes s’exécutent, merci de patienter…",
+      "errorTitle": "Échec du diagnostic"
+    },
+    "table": {
+      "title": "Résultats des outils",
+      "description": "Affiche l’état d’installation, les versions et la sortie des commandes.",
+      "columns": {
+        "tool": "Outil",
+        "status": "Statut",
+        "version": "Version",
+        "output": "Sortie"
+      },
+      "loading": "Exécution des commandes...",
+      "empty": "Aucun diagnostic disponible."
+    },
+    "footer": {
+      "tip": "Le service fonctionne sur le port 3000. Lancez-le avec <command>npm run dev</command>."
+    },
+    "badge": {
+      "installed": "Installé",
+      "missing": "Non détecté"
+    },
+    "system": {
+      "title": "Informations système du serveur",
+      "description": "Affiche les informations sur le système d’exploitation, le CPU et la mémoire de l’hôte.",
+      "fields": {
+        "hostname": "Nom d’hôte",
+        "platform": "Plateforme",
+        "release": "Version de l’OS",
+        "arch": "Architecture",
+        "cpuModel": "Modèle du CPU",
+        "cpuCores": "Cœurs CPU",
+        "cpuSpeed": "Fréquence CPU",
+        "totalMemory": "Mémoire totale (Go)",
+        "freeMemory": "Mémoire disponible (Go)",
+        "uptime": "Temps de fonctionnement",
+        "loadAverage": "Charge moyenne (1 / 5 / 15 min)"
+      },
+      "units": {
+        "day": "j",
+        "hour": "h",
+        "minute": "min"
+      },
+      "values": {
+        "notAvailable": "N/D"
+      }
+    },
+    "language": {
+      "ariaLabel": "Changer la langue d’affichage",
+      "current": "Actuel"
+    },
+    "auth": {
+      "title": "Connexion requise",
+      "headline": "Connectez-vous pour continuer",
+      "description": "Utilisez votre e-mail ou votre compte Google pour accéder au tableau de bord de diagnostic.",
+      "requirement": {
+        "title": "Connexion obligatoire",
+        "description": "Veuillez vous connecter avant d’exécuter les diagnostics d’environnement."
+      },
+      "loading": "Vérification de votre session…",
+      "signOut": "Se déconnecter",
+      "signedInAs": "Connecté en tant que {email}",
+      "userFallback": "votre compte"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}

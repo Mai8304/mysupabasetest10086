@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "Umgebungsdiagnose",
+      "description": "Prüft Installation und Version von Node.js, Python, Next.js, shadcn/ui, Tailwind CSS, FastAPI und pnpm."
+    },
+    "status": {
+      "checking": "Überprüfung läuft…",
+      "summary": "{count} von {total} erkannt"
+    },
+    "actions": {
+      "refreshing": "Prüfung wird ausgeführt",
+      "refresh": "Prüfung erneut starten"
+    },
+    "notices": {
+      "fetchError": "Diagnosedaten konnten nicht geladen werden. Bitte erneut versuchen.",
+      "loadingHint": "Befehle werden ausgeführt, bitte einen Moment warten…",
+      "errorTitle": "Diagnose fehlgeschlagen"
+    },
+    "table": {
+      "title": "Werkzeugübersicht",
+      "description": "Zeigt Installationsstatus, Versionsnummer und Befehlsausgabe an.",
+      "columns": {
+        "tool": "Werkzeug",
+        "status": "Status",
+        "version": "Version",
+        "output": "Ausgabe"
+      },
+      "loading": "Befehle werden ausgeführt...",
+      "empty": "Keine Diagnoseergebnisse vorhanden."
+    },
+    "footer": {
+      "tip": "Der Dienst läuft auf Port 3000. Mit <command>npm run dev</command> starten."
+    },
+    "badge": {
+      "installed": "Installiert",
+      "missing": "Nicht gefunden"
+    },
+    "system": {
+      "title": "Server-Systeminformationen",
+      "description": "Details zum Betriebssystem, zur CPU und zum Speicher der Hostmaschine.",
+      "fields": {
+        "hostname": "Hostname",
+        "platform": "Plattform",
+        "release": "OS-Version",
+        "arch": "Architektur",
+        "cpuModel": "CPU-Modell",
+        "cpuCores": "CPU-Kerne",
+        "cpuSpeed": "CPU-Taktfrequenz",
+        "totalMemory": "Gesamtspeicher (GB)",
+        "freeMemory": "Verfügbarer Speicher (GB)",
+        "uptime": "Laufzeit",
+        "loadAverage": "Durchschnittslast (1 / 5 / 15 Min)"
+      },
+      "units": {
+        "day": "T",
+        "hour": "Std",
+        "minute": "Min"
+      },
+      "values": {
+        "notAvailable": "k.A."
+      }
+    },
+    "language": {
+      "ariaLabel": "Sprache ändern",
+      "current": "Aktuell"
+    },
+    "auth": {
+      "title": "Zugang erforderlich",
+      "headline": "Melde dich an, um fortzufahren",
+      "description": "Melde dich mit deiner E-Mail-Adresse oder deinem Google-Konto an, um das Diagnose-Dashboard zu nutzen.",
+      "requirement": {
+        "title": "Anmeldung notwendig",
+        "description": "Bitte melde dich an, bevor du die Umgebungsdiagnose ausführst."
+      },
+      "loading": "Sitzung wird geprüft…",
+      "signOut": "Abmelden",
+      "signedInAs": "Angemeldet als {email}",
+      "userFallback": "dein Konto"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}

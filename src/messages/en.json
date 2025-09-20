@@ -1,0 +1,91 @@
+{
+  "dashboard": {
+    "header": {
+      "title": "Environment Diagnostics Dashboard",
+      "description": "Verify the installation status and version of Node.js, Python, Next.js, shadcn/ui, Tailwind CSS, FastAPI, and pnpm."
+    },
+    "status": {
+      "checking": "Checking…",
+      "summary": "Detected {count} of {total}"
+    },
+    "actions": {
+      "refreshing": "Running checks",
+      "refresh": "Run checks again"
+    },
+    "notices": {
+      "fetchError": "Unable to fetch diagnostics, please try again.",
+      "loadingHint": "Commands are running, hang tight…",
+      "errorTitle": "Diagnostics failed"
+    },
+    "table": {
+      "title": "Tool results",
+      "description": "Displays installation status, version numbers, and command output.",
+      "columns": {
+        "tool": "Tool",
+        "status": "Status",
+        "version": "Version",
+        "output": "Output"
+      },
+      "loading": "Executing commands...",
+      "empty": "No diagnostics available."
+    },
+    "footer": {
+      "tip": "The service runs on port 3000. Start it with <command>npm run dev</command>."
+    },
+    "badge": {
+      "installed": "Installed",
+      "missing": "Not found"
+    },
+    "system": {
+      "title": "Server system information",
+      "description": "Details about the host operating system, CPU and memory.",
+      "fields": {
+        "hostname": "Hostname",
+        "platform": "Platform",
+        "release": "OS release",
+        "arch": "Architecture",
+        "cpuModel": "CPU model",
+        "cpuCores": "CPU cores",
+        "cpuSpeed": "CPU clock speed",
+        "totalMemory": "Total memory (GB)",
+        "freeMemory": "Available memory (GB)",
+        "uptime": "Uptime",
+        "loadAverage": "Load average (1 / 5 / 15 min)"
+      },
+      "units": {
+        "day": "d",
+        "hour": "h",
+        "minute": "m"
+      },
+      "values": {
+        "notAvailable": "N/A"
+      }
+    },
+    "language": {
+      "ariaLabel": "Change language",
+      "current": "Current"
+    },
+    "auth": {
+      "title": "Account required",
+      "headline": "Sign in to continue",
+      "description": "Use your email address or Google account to access the diagnostics dashboard.",
+      "requirement": {
+        "title": "Login required",
+        "description": "Please sign in before running environment diagnostics."
+      },
+      "loading": "Checking your session…",
+      "signOut": "Sign out",
+      "signedInAs": "Signed in as {email}",
+      "userFallback": "your account"
+    },
+    "tools": {
+      "node": "Node.js",
+      "python": "Python",
+      "next": "Next.js",
+      "shadcn": "shadcn/ui",
+      "tailwind": "Tailwind CSS",
+      "fastapi": "FastAPI",
+      "pnpm": "pnpm"
+    }
+  }
+}
