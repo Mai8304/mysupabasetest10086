@@ -19,12 +19,10 @@ export async function middleware(request: NextRequest): Promise<NextResponse> {
 
   const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
 
-  const supabase = createMiddlewareClient({
-    req: request,
-    res: response,
-    supabaseUrl,
-    supabaseKey: supabaseAnonKey,
-  });
+  const supabase = createMiddlewareClient(
+    { req: request, res: response },
+    { supabaseUrl, supabaseKey: supabaseAnonKey },
+  );
   await supabase.auth.getSession();
 
   return response;
