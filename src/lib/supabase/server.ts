@@ -5,11 +5,9 @@ import {
   createServerActionClient,
   createServerComponentClient,
 } from "@supabase/auth-helpers-nextjs";
-import type { SupabaseClient } from "@supabase/supabase-js";
-
 import { getSupabaseConfig } from "./config";
 
-export function createSupabaseServerClient(): SupabaseClient {
+export function createSupabaseServerClient() {
   const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
 
   return createServerComponentClient(
@@ -18,7 +16,7 @@ export function createSupabaseServerClient(): SupabaseClient {
   );
 }
 
-export function createSupabaseServerActionClient(): SupabaseClient {
+export function createSupabaseServerActionClient() {
   const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
 
   return createServerActionClient(
@@ -27,7 +25,7 @@ export function createSupabaseServerActionClient(): SupabaseClient {
   );
 }
 
-export function createSupabaseRouteHandlerClient(): SupabaseClient {
+export function createSupabaseRouteHandlerClient() {
   const { supabaseUrl, supabaseAnonKey } = getSupabaseConfig();
 
   return createRouteHandlerClient(
